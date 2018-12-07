@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Assignment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="http://ercess.com/live/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="http://ercess.com/live/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="http://ercess.com/live/css/style.css" type="text/css" />
+	<link href="http://ercess.com/live/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="http://ercess.com/live/css/color/color.css" title="color" />
+	<link rel="stylesheet" href="http://ercess.com/live/semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/components/form.css">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"> </script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/components/form.js"> </script>
+<script>
+  $(document).ready(function(){
+  $('.ui.form')
+    .form({
+      fields: {
+        name: {
+          identifier: 'email',
+          rules: [
+            {
+              type   : 'email',
+              prompt : 'Please enter a valid e-mail'
+            }
+          ]
+        },
+      
+      }
+    })
+  ;
+  });
+  
+  function showModal (){
+  $('.ui.basic.modal').modal('show');
+  }
+</script>
+</head>
+<body>
+
+
+
+<form class="ui form segment" action="process.php" method="POST">
+    <div class="field">
+      <label>Email</label>
+      <input placeholder="username@example.com" name="email" type="text">
+    </div>
+<div class="ui blue submit button">Submit</div>
+<div class="ui error message"></div>
+  </form>
+  
+  
+						<!-- MODAL -->
+<div class="ui basic modal">
+  <div class="content">
+    <p>The email id is stored in our database.</p>
+  </div>
+  <div class="actions">
+    <div class="ui green ok inverted button" style="left:-80%">
+      <i class="checkmark icon"></i>
+      That's Great!
+    </div>
+  </div>
+</div>
+	
+<!-- 	<script type="text/javascript" src="http://ercess.com/live/js/jquery2.1.1.js"></script>
+	<script type="text/javascript" src="http://ercess.com/live/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://ercess.com/live/js/modernizr.custom.97074.js"></script>
+	<script type="text/javascript" src="http://ercess.com/live/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="http://ercess.com/live/js/script.js"></script>
+	<script type="text/javascript" src="http://ercess.com/live/js/typeahead.bundle.min.js"></script> -->
+</body>

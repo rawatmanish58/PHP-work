@@ -1,0 +1,2 @@
+Here is a flow in which First the user Enters the email id then it gets validated using Semantic UI. After validation, the email id is sent to the PHP page for it to be stored on the MySQL database and after the email id is successfully stored in the database, the php code will open a modal with message "The email id has been stored in the database".
+PS - the frontend has been designed in the Semantic UI.
